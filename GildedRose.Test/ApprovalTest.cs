@@ -4,8 +4,9 @@ using System.IO;
 using System.Text;
 using ApprovalTests;
 using ApprovalTests.Reporters;
+using GildedRose.Logic;
 
-namespace csharpcore
+namespace GildedRose.Test
 {
     [UseReporter(typeof(DiffReporter))]
     public class ApprovalTest
@@ -13,12 +14,12 @@ namespace csharpcore
         [Fact]
         public void ThirtyDays()
         {
-            var fakeoutput = new StringBuilder();
-            Console.SetOut(new StringWriter(fakeoutput));
+            var programOutput = new StringBuilder();
+            Console.SetOut(new StringWriter(programOutput));
             Console.SetIn(new StringReader("a\n"));
 
             Program.Main(new string[] { });
-            var output = fakeoutput.ToString();
+            var output = programOutput.ToString();
 
             Approvals.Verify(output);
         }

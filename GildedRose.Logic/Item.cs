@@ -1,4 +1,4 @@
-﻿namespace csharpcore
+﻿namespace GildedRose.Logic
 {
     public class Item
     {
