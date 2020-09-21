@@ -1,5 +1,4 @@
-﻿
-using FluentAssertions;
+﻿using FluentAssertions;
 using GildedRose.Logic;
 using Xunit;
 

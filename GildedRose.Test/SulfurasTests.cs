@@ -2,7 +2,6 @@
 using GildedRose.Logic;
 using Xunit;
 
-
 namespace GildedRose.Test
 {
     public class SulfurasTests : ItemsTestsBase

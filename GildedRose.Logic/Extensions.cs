@@ -1,6 +1,4 @@
-﻿using GildedRose.Logic.Strategies;
-
-namespace GildedRose.Logic
+﻿namespace GildedRose.Logic
 {
     public static class Extensions
     {
