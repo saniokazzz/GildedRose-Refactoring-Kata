@@ -17,7 +17,7 @@ namespace GildedRose.Test
         };
     }
 
-    public class BackstagePassesTests : ItemsTests
+    public class BackstagePassesTests : ItemsTestsBase
     {
         //- "Backstage passes", like aged brie, increases in Quality as its SellIn value approaches;
 	    // Quality increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but

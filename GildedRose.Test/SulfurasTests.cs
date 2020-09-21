@@ -5,7 +5,7 @@ using Xunit;
 
 namespace GildedRose.Test
 {
-    public class SulfurasTests : ItemsTests
+    public class SulfurasTests : ItemsTestsBase
     {
         //- "Sulfuras", being a legendary item, never has to be sold or decreases in Quality
         [Fact(DisplayName = "Sulfuras never has to be sold or decreases in Quality")]

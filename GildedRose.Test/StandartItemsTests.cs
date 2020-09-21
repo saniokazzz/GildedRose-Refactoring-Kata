@@ -4,7 +4,7 @@ using Xunit;
 
 namespace GildedRose.Test
 {
-    public class StandartItemsTests : ItemsTests
+    public class StandartItemsTests : ItemsTestsBase
     {
         [Fact(DisplayName = "Standart items quality is decreased by 1")]
         public void QualityIsDecreased()

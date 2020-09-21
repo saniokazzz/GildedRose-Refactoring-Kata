@@ -1,21 +1,16 @@
-﻿using FluentAssertions;
+﻿
+using FluentAssertions;
 using GildedRose.Logic;
 using Xunit;
 
 namespace GildedRose.Test
 {
-    public class ItemsTests
+    public class GuildedRoseTests : ItemsTestsBase
     {
-        public void Execute(Item[] items)
-        {
-            var app = new GildedRose.Logic.GildedRose(items);
-            app.UpdateQuality();
-        }
-
         [Fact(DisplayName = "Algorithm transforms data same way as legacy")]
         public void ShouldTransformCollectionSameWayAsLegacy()
         {
-            var items = new [] {
+            var items = new[] {
                 new Item {Name = "+5 Dexterity Vest", SellIn = 10, Quality = 20},
                 new Item {Name = "Aged Brie", SellIn = 2, Quality = 0},
                 new Item {Name = "Elixir of the Mongoose", SellIn = 5, Quality = 7},
@@ -42,7 +37,7 @@ namespace GildedRose.Test
                 new Item {Name = "Conjured Mana Cake", SellIn = 3, Quality = 6}
             };
 
-            var expected = new [] {
+            var expected = new[] {
                 new Item {Name = "+5 Dexterity Vest", SellIn = -20, Quality = 0},
                 new Item {Name = "Aged Brie", SellIn = -28, Quality = 50},
                 new Item {Name = "Elixir of the Mongoose", SellIn = -25, Quality = 0},

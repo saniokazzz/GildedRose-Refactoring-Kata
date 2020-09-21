@@ -5,7 +5,7 @@ using Xunit;
 
 namespace GildedRose.Test
 {
-    public class ConjuredItemsTests : ItemsTests
+    public class ConjuredItemsTests : ItemsTestsBase
     {
         [Fact(DisplayName = "Conjured items also as standart items degrade in quality down to 0")]
         public void ConjuredItemsShouldDegradeInQualityLess0()

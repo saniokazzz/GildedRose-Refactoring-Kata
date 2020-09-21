@@ -11,7 +11,7 @@ namespace GildedRose.Test
     [UseReporter(typeof(DiffReporter))]
     public class ApprovalTest
     {
-        [Fact(Skip = "Should run after all changes completed")]
+        [Fact]
         public void ThirtyDays()
         {
             var programOutput = new StringBuilder();

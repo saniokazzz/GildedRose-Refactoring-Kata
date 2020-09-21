@@ -4,7 +4,7 @@ using Xunit;
 
 namespace GildedRose.Test
 {
-    public class AgedBrieTests : ItemsTests
+    public class AgedBrieTests : ItemsTestsBase
     {
         //- "Aged Brie" actually increases in Quality the older it gets
         [Fact(DisplayName = "Aged Brie increases in quality over age")]
